@@ -70,7 +70,8 @@ app.get('/usuarios', async function(req, res){
 })
 
 app.get('/listar', async function(req, res){
-  res.render('listar');
+  const nick = await usuario.findAll();
+  res.render("listar", { nick });
 })
 
 app.listen(3000, function() {
