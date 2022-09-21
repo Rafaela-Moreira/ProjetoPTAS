@@ -7,7 +7,7 @@ yarn add sequelize-cli nodemon --dev
 yarn sequelize init
 
 # Adicionado modelo
-yarn sequelize-cli model:create --name usuario --attributes nome:string
+yarn sequelize-cli model:create --name usuario --attributes nome:string,usuario:string,senha:string
 Alterar configurações do banco
 
 # Persistir modelo no banco
@@ -22,15 +22,15 @@ yarn sequelize-cli seed:generate --name adicionar-usarios
 
 # Configurações do git Local
 git init
-git config user.name "Luiz Picolo"
-git config user.email "luizpicolo@gmail.com"  
+git config user.name "Rafaela-Moreira"
+git config user.email "rafaela.moreira@estudante.ifms.edu.br"  
 
 # GitIgnore
 .gitignore
 
 git add . 
-git commit -m "Mensagem inicial"
-git remote add origin https://github.com/luizpicolo/teste.git
+git commit -m "Primeiro commit"
+git remote add origin https://github.com/Rafaela-Moreira/ProjetoPTAS.git
 
 # Criar Token de acesso caso não tenha
 

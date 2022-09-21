@@ -69,6 +69,10 @@ app.get('/usuarios', async function(req, res){
   res.json(usuarios);
 })
 
+app.get('/listar', async function(req, res){
+  res.render('listar');
+})
+
 app.listen(3000, function() {
   console.log('App de Exemplo escutando na porta 3000!')
 });
